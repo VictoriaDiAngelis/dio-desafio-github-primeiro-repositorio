@@ -1,0 +1,25 @@
+2. Escreva um programa em Pascal para ler um número positivo qualquer, calcular e escrever o quadrado e a raiz quadrada do mesmo.
+
+program ex2;
+uses crt;
+
+var x, q: integer; 
+r: real;
+
+begin
+clrscr;
+write('Informe um numero: ');
+readln(x);
+q:= sqr(x);
+writeln('O quadrado de ', x, ' , ', q);
+if x>=0 then
+ 	begin 
+ 	r:= sqrt(x);
+	writeln('A raiz quadrada de ', x, ' , ', r:0:2);
+ 	end
+else 
+	begin
+	writeln('Nao existe raiz de ',x); 
+	end;
+readkey;
+end.

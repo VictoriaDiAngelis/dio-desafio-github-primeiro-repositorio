@@ -1,0 +1,23 @@
+3. Escrever um programa em Pascal que leia 3 valores: a, b, c e calcule e escreva a média aritmética, harmônica e geométrica correspondente.
+
+program ex3;
+uses crt;
+
+var a, b, c, ma, mg, mh: real;
+
+begin
+clrscr;
+write('Informe o primeiro numero: ');
+readln(a);
+write('Informe o segundo numero: ');
+readln(b);
+write('Informe o terceiro numero: ');
+readln(c);
+ma:= (a+b+c)/3;
+mh:= 3/(1/a + 1/b + 1/c);
+mg:= exp(ln(a*b*c)*(1/3));
+writeln('Media Aritmetica: ',ma:0:2);
+writeln('Media Harmonica: ',mh:0:2);
+writeln('Media Geometrica: ',mg:0:2);
+readkey;
+end.

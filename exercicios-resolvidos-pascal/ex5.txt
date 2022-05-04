@@ -1,0 +1,20 @@
+5. Escrever um programa em Pascal que lê 3 valores a, b, c que são lados de um triângulo e calcule a área deste triângulo.
+
+program ex5;
+uses crt;
+
+var a, b, c, s, at: real;
+
+begin
+clrscr;
+write('Informe o primeiro numero: ');
+readln(a);
+write('Informe o segundo numero: ');
+readln(b);
+write('Informe o terceiro numero: ');
+readln(c);
+s:= (a+b+c)/2;
+at:=sqrt(s*(s-a)*(s-b)*(s-c));
+writeln('Area do triangulo: ',at:0:2);
+readkey;
+end.

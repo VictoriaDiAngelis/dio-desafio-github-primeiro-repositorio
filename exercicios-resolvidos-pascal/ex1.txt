@@ -1,0 +1,18 @@
+ 
+1. Escreva um programa em Pascal para ler, calcular e escrever a média aritmética entre dois números.
+
+program ex1;
+uses crt;
+
+var n1, n2, m: real;
+
+begin
+clrscr;
+write('Informe um numero: ');
+readln(n1);
+write('Informe outro numero: ');
+readln(n2);
+m:=(n1+n2)/2;
+writeln('A media ,: ',m:0:2);
+readkey;
+end.

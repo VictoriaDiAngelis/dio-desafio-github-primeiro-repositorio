@@ -1,0 +1,23 @@
+4. Escrever um programa em Pascal que lê o número de um vendedor, o seu salário-fixo, o total de vendas por ele efetuadas e o percentual que ganha sobre o total de vendas. Calcular o salário total do vendedor. Escrever número do vendedor e o salário total.
+
+program ex4;
+uses crt;
+
+var
+nv: integer;
+sf, tv, per, st: real;
+
+begin
+clrscr;
+write('Informe o numero do vendedor: ');
+readln(nv);
+write('Informe o salario fixo: ');
+readln(sf);
+write('Informe o total de vendas: ');
+readln(tv);
+write('Informe o percentual sobre as vendas: ');
+readln(per);
+st:= sf + tv * per / 100;
+writeln('O vendedor ', nv, ' recebe um salario total de R$ ', st:0:2);
+readkey;
+end.
